@@ -7,11 +7,10 @@ public static void main(String[] args) {
     int sum = 0;
     int r;
     sc.close();
-    while (n!=0) {
-            r = n%10;
-            sum = sum + r;
-            n = n/10;
-        }
+    for ( ;n!=0;n=n/10){
+        r = n%10;
+        sum = sum + r;
+    }
         System.out.println("The Sum of Digits is :"+ sum);
     }
 }
